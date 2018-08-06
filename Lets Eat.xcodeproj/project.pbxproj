@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593101342118B3E000427C1A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593101332118B3E000427C1A /* MapKit.framework */; };
+		593101372118B47C00427C1A /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593101352118B47C00427C1A /* Explore.storyboard */; };
+		593101392118B4A400427C1A /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593101382118B4A400427C1A /* Map.storyboard */; };
 		59F361862106269B0013B2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F361852106269B0013B2F8 /* AppDelegate.swift */; };
 		59F3618B2106269B0013B2F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F361892106269B0013B2F8 /* Main.storyboard */; };
 		59F361902106269B0013B2F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F3618E2106269B0013B2F8 /* LaunchScreen.storyboard */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		593101332118B3E000427C1A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		593101362118B47C00427C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Explore.storyboard; sourceTree = "<group>"; };
+		593101382118B4A400427C1A /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		59F361822106269B0013B2F8 /* Lets Eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lets Eat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F361852106269B0013B2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F3618A2106269B0013B2F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,17 +33,120 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593101342118B3E000427C1A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		593101322118B3DF00427C1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				593101332118B3E000427C1A /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5931013A2118B4C900427C1A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				59F361912106269B0013B2F8 /* Info.plist */,
+				5931013E2118B51C00427C1A /* Images */,
+				5931013D2118B50900427C1A /* Storyboards */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		5931013B2118B4EC00427C1A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				593101452118B55A00427C1A /* Main */,
+				593101442118B55200427C1A /* Explore */,
+				593101432118B54B00427C1A /* Restaurant */,
+				593101422118B54700427C1A /* Map */,
+				593101412118B53C00427C1A /* Review Location */,
+				593101402118B53300427C1A /* Review List */,
+				5931013F2118B52900427C1A /* Common */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		5931013D2118B50900427C1A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				59F361892106269B0013B2F8 /* Main.storyboard */,
+				593101382118B4A400427C1A /* Map.storyboard */,
+				593101352118B47C00427C1A /* Explore.storyboard */,
+				59F3618E2106269B0013B2F8 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5931013E2118B51C00427C1A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				59F36199210630070013B2F8 /* assets.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5931013F2118B52900427C1A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		593101402118B53300427C1A /* Review List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Review List";
+			sourceTree = "<group>";
+		};
+		593101412118B53C00427C1A /* Review Location */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Review Location";
+			sourceTree = "<group>";
+		};
+		593101422118B54700427C1A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		593101432118B54B00427C1A /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Restaurant;
+			sourceTree = "<group>";
+		};
+		593101442118B55200427C1A /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Explore;
+			sourceTree = "<group>";
+		};
+		593101452118B55A00427C1A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				59F361852106269B0013B2F8 /* AppDelegate.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		59F361792106269A0013B2F8 = {
 			isa = PBXGroup;
 			children = (
 				59F361842106269B0013B2F8 /* Lets Eat */,
 				59F361832106269B0013B2F8 /* Products */,
+				593101322118B3DF00427C1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +161,8 @@
 		59F361842106269B0013B2F8 /* Lets Eat */ = {
 			isa = PBXGroup;
 			children = (
-				59F36199210630070013B2F8 /* assets.xcassets */,
-				59F361852106269B0013B2F8 /* AppDelegate.swift */,
-				59F361892106269B0013B2F8 /* Main.storyboard */,
-				59F3618E2106269B0013B2F8 /* LaunchScreen.storyboard */,
-				59F361912106269B0013B2F8 /* Info.plist */,
+				5931013B2118B4EC00427C1A /* Application */,
+				5931013A2118B4C900427C1A /* Assets */,
 			);
 			path = "Lets Eat";
 			sourceTree = "<group>";
@@ -120,7 +226,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593101372118B47C00427C1A /* Explore.storyboard in Resources */,
 				59F361902106269B0013B2F8 /* LaunchScreen.storyboard in Resources */,
+				593101392118B4A400427C1A /* Map.storyboard in Resources */,
 				59F3618B2106269B0013B2F8 /* Main.storyboard in Resources */,
 				59F3619A210630070013B2F8 /* assets.xcassets in Resources */,
 			);
@@ -140,6 +248,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		593101352118B47C00427C1A /* Explore.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				593101362118B47C00427C1A /* Base */,
+			);
+			name = Explore.storyboard;
+			sourceTree = "<group>";
+		};
 		59F361892106269B0013B2F8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,6 +413,7 @@
 				59F361962106269B0013B2F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,73 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="CNN-PW-Sco">
-            <objects>
-                <viewController id="tHy-f8-jWD" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Nvk-2w-iCZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="1u2-lS-1Kq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bsa-M0-qAM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="LnJ-yc-LA4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n6Q-TL-OVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1036" y="154.27286356821591"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Rvc-Zn-84q">
-            <objects>
-                <viewController id="EwY-3L-tnH" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Av4-9S-NJs"/>
-                        <viewControllerLayoutGuide type="bottom" id="9db-H4-PbS"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="iBK-Fg-7UX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="hlZ-57-h97">
-                        <nil key="title"/>
-                        <view key="titleView" contentMode="scaleToFill" id="Y7Z-iQ-ACI">
-                            <rect key="frame" x="129" y="6" width="118" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uif-kc-um2">
-                                    <rect key="frame" x="0.0" y="0.0" width="118" height="33"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSh-sF-KxL">
-                                            <rect key="frame" x="0.0" y="0.0" width="42" height="33"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Uxc-cI-6Mx">
-                                            <rect key="frame" x="42" y="0.0" width="76" height="33"/>
-                                        </imageView>
-                                    </subviews>
-                                </stackView>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="uif-kc-um2" firstAttribute="top" secondItem="Y7Z-iQ-ACI" secondAttribute="top" id="LfY-Sf-KZo"/>
-                                <constraint firstItem="uif-kc-um2" firstAttribute="leading" secondItem="Y7Z-iQ-ACI" secondAttribute="leading" id="OXr-YJ-VzD"/>
-                                <constraint firstAttribute="trailing" secondItem="uif-kc-um2" secondAttribute="trailing" id="SKG-sz-bm6"/>
-                                <constraint firstAttribute="bottom" secondItem="uif-kc-um2" secondAttribute="bottom" id="ZlL-wy-Mig"/>
-                            </constraints>
-                        </view>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aG5-oh-Bab" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1036" y="-500.59970014992507"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ebV-Pi-icb">
             <objects>
@@ -86,58 +19,33 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="HYH-Ot-pwD" kind="relationship" relationship="viewControllers" id="syd-2I-UAd"/>
-                        <segue destination="03N-mE-IYf" kind="relationship" relationship="viewControllers" id="SM9-dd-HF7"/>
+                        <segue destination="uO7-NJ-VSL" kind="relationship" relationship="viewControllers" id="syd-2I-UAd"/>
+                        <segue destination="mpx-av-CRw" kind="relationship" relationship="viewControllers" id="SM9-dd-HF7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXA-6K-ujK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-854" y="-172"/>
         </scene>
-        <!--EXPLORE-->
-        <scene sceneID="L3q-7F-Is8">
+        <!--Explore-->
+        <scene sceneID="Ajo-FR-Ztg">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HYH-Ot-pwD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="EXPLORE" image="icon-explore-off" selectedImage="icon-explore-on" id="ylW-eg-bj0"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="657-bL-yIQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="EwY-3L-tnH" kind="relationship" relationship="rootViewController" id="pcG-Xs-hHZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bzg-FY-bdp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Explore" id="uO7-NJ-VSL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="GzJ-c6-p0c"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TmL-90-9bM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="96.799999999999997" y="-500.59970014992507"/>
         </scene>
-        <!--MAP-->
-        <scene sceneID="ZZt-me-m7f">
+        <!--Map-->
+        <scene sceneID="MR0-pa-6hJ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="03N-mE-IYf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="MAP" image="icon-map-off" selectedImage="icon-map-on" id="2uK-iK-iVv"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="17u-F7-b0s">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="tHy-f8-jWD" kind="relationship" relationship="rootViewController" id="bvu-HT-XvC"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Wj-9G-aTC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Map" id="mpx-av-CRw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="d2r-jg-bRz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xaa-U9-7XA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96.799999999999997" y="154.27286356821591"/>
+            <point key="canvasLocation" x="112" y="-47"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="down-arrow" width="10" height="7"/>
-        <image name="icon-explore-off" width="35" height="23"/>
-        <image name="icon-explore-on" width="35" height="23"/>
-        <image name="icon-map-off" width="16" height="22"/>
-        <image name="icon-map-on" width="16" height="22"/>
-    </resources>
 </document>
