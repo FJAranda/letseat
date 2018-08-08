@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590A7C36211B4F22003ED0DE /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 590A7C35211B4F22003ED0DE /* Locations.plist */; };
+		590A7C38211B5041003ED0DE /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A7C37211B5041003ED0DE /* LocationDataManager.swift */; };
 		593101342118B3E000427C1A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593101332118B3E000427C1A /* MapKit.framework */; };
 		593101372118B47C00427C1A /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593101352118B47C00427C1A /* Explore.storyboard */; };
 		593101392118B4A400427C1A /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 593101382118B4A400427C1A /* Map.storyboard */; };
@@ -16,6 +18,7 @@
 		59A0EE3B2119F5AE004B6B6F /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0EE3A2119F5AE004B6B6F /* ExploreDataManager.swift */; };
 		59A0EE3D211A001D004B6B6F /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0EE3C211A001D004B6B6F /* ExploreCell.swift */; };
 		59A0EE42211A0861004B6B6F /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0EE41211A0861004B6B6F /* RestaurantListViewController.swift */; };
+		59C32778211B47F600E94777 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C32777211B47F600E94777 /* LocationViewController.swift */; };
 		59F361862106269B0013B2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F361852106269B0013B2F8 /* AppDelegate.swift */; };
 		59F3618B2106269B0013B2F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F361892106269B0013B2F8 /* Main.storyboard */; };
 		59F361902106269B0013B2F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F3618E2106269B0013B2F8 /* LaunchScreen.storyboard */; };
@@ -23,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		590A7C35211B4F22003ED0DE /* Locations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
+		590A7C37211B5041003ED0DE /* LocationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
 		593101332118B3E000427C1A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		593101362118B47C00427C1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Explore.storyboard; sourceTree = "<group>"; };
 		593101382118B4A400427C1A /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		59A0EE3A2119F5AE004B6B6F /* ExploreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		59A0EE3C211A001D004B6B6F /* ExploreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		59A0EE41211A0861004B6B6F /* RestaurantListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		59C32777211B47F600E94777 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		59F361822106269B0013B2F8 /* Lets Eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lets Eat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F361852106269B0013B2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F3618A2106269B0013B2F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +79,7 @@
 		5931013B2118B4EC00427C1A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				59C32773211B47A600E94777 /* Location */,
 				593101452118B55A00427C1A /* Main */,
 				593101442118B55200427C1A /* Explore */,
 				593101432118B54B00427C1A /* Restaurant */,
@@ -207,6 +214,40 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		59C32773211B47A600E94777 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				59C32776211B47B800E94777 /* Controller */,
+				59C32775211B47B300E94777 /* View */,
+				59C32774211B47AE00E94777 /* Model */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		59C32774211B47AE00E94777 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				590A7C35211B4F22003ED0DE /* Locations.plist */,
+				590A7C37211B5041003ED0DE /* LocationDataManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		59C32775211B47B300E94777 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		59C32776211B47B800E94777 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				59C32777211B47F600E94777 /* LocationViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		59F361792106269A0013B2F8 = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +336,7 @@
 				593101372118B47C00427C1A /* Explore.storyboard in Resources */,
 				59F361902106269B0013B2F8 /* LaunchScreen.storyboard in Resources */,
 				593101392118B4A400427C1A /* Map.storyboard in Resources */,
+				590A7C36211B4F22003ED0DE /* Locations.plist in Resources */,
 				59F3618B2106269B0013B2F8 /* Main.storyboard in Resources */,
 				59A0EE372119F3C2004B6B6F /* ExploreData.plist in Resources */,
 				59F3619A210630070013B2F8 /* assets.xcassets in Resources */,
@@ -308,7 +350,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C32778211B47F600E94777 /* LocationViewController.swift in Sources */,
 				59A0EE352119E73B004B6B6F /* ExploreViewController.swift in Sources */,
+				590A7C38211B5041003ED0DE /* LocationDataManager.swift in Sources */,
 				59A0EE42211A0861004B6B6F /* RestaurantListViewController.swift in Sources */,
 				59F361862106269B0013B2F8 /* AppDelegate.swift in Sources */,
 				59A0EE392119F410004B6B6F /* ExploreItem.swift in Sources */,

@@ -10,8 +10,14 @@ import UIKit
 
 class ExploreViewController: UIViewController, UICollectionViewDataSource {
     
+    //Variables
     @IBOutlet var collectionView:UICollectionView!
     let manager = ExploreDataManager()
+    
+    //Funciones de la vista
+    @IBAction func unwindLocationCancel(segue: UIStoryboardSegue){
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
