@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="17G65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="03N-mE-IYf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="03N-mE-IYf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,9 +16,8 @@
                     <tabBarItem key="tabBarItem" title="MAP" image="icon-map-off" selectedImage="icon-map-on" id="2uK-iK-iVv"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="17u-F7-b0s">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -26,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="96.799999999999997" y="154.27286356821591"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="eB6-Od-Gzq">
             <objects>
-                <viewController id="Kde-Je-eBE" sceneMemberID="viewController">
+                <viewController id="Kde-Je-eBE" customClass="MapViewController" customModule="Lets_Eat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ewd-RY-npO"/>
                         <viewControllerLayoutGuide type="bottom" id="ObW-Zw-EZk"/>
@@ -53,14 +56,14 @@
                     <navigationItem key="navigationItem" id="WT9-JD-5hK">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="pCQ-Ew-vYB">
-                            <rect key="frame" x="129" y="6" width="118" height="33"/>
+                            <rect key="frame" x="128.5" y="5.5" width="118" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="izG-Jr-Ql8">
                                     <rect key="frame" x="0.0" y="0.0" width="118" height="33"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTE-EM-gID">
-                                            <rect key="frame" x="0.0" y="11" width="110" height="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTE-EM-gID">
+                                            <rect key="frame" x="0.0" y="10.5" width="110" height="12"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="12" id="iV7-m8-6n0"/>
                                             </constraints>
@@ -80,7 +83,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aze-0L-sPL">
                                     <rect key="frame" x="0.0" y="0.0" width="118" height="33"/>
                                     <connections>
-                                        <segue destination="eqg-1Y-eZv" kind="presentation" id="K2b-hW-iub"/>
+                                        <segue destination="eqg-1Y-eZv" kind="presentation" identifier="locationList" id="K2b-hW-iub"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -97,6 +100,10 @@
                             </constraints>
                         </view>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="JJX-l9-dnq" id="9Au-Fr-coq"/>
+                        <segue destination="hoS-aS-mSG" kind="show" identifier="showDetail" id="ZKW-f5-VKr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CS3-rp-e5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,7 +134,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eqg-1Y-eZv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PH1-fh-KzE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -138,6 +145,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0S-A9-vkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1772" y="153.37331334332833"/>
+        </scene>
+        <!--RestaurantDetail-->
+        <scene sceneID="a2q-Vg-EZ5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RestaurantDetail" id="hoS-aS-mSG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x00-An-yjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="640"/>
         </scene>
     </scenes>
     <resources>

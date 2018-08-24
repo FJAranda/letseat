@@ -30,4 +30,11 @@ class LocationDataManager{
             let items = NSArray(contentsOfFile: path) else {return []}
         return items as! [String]
     }
+    
+    func findLocation(by name:String)->(isFound:Bool, position:Int){
+        guard let index = arrLocations.index(of: name) else{
+            return(isFound:false, position:0)
+        }
+        return(isFound:true, position:index)
+    }
 }
